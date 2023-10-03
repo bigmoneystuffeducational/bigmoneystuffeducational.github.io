@@ -45,8 +45,10 @@ main {
 }
 
 /* Style the embed to take up the entire screen */
+/* Style the embed to take up the entire width */
 embed {
-    width: 100%;
+    width: 100vw; /* 100% of the viewport width */
     height: calc(100vh - 50px); /* Subtract the navbar's height from the viewport height */
-    border: none; /* Remove iframe border if needed */
+    border: none; /* Remove embed border if needed */
 }
+

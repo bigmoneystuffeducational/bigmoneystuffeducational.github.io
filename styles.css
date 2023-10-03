@@ -8,30 +8,39 @@ body, h1, h2, ul, li {
 header {
     background-color: #000;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
 }
 
-/* Add this style to make the main content take up the full screen */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Style the main content to take up the full screen */
 main {
-    height: calc(100vh - 60px); /* Subtract the header height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gif-text {
-    text-align: center;
+/* Style the GIF container to stretch to the screen size */
+.gif-container {
+    width: 100%;
+    height: 100%;
 }
 
-.gif-text img {
+.gif-container img {
     max-width: 100%;
-    height: auto;
-}
-
-/* Center the text vertically */
-.gif-text p {
-    margin-top: 20px; /* Adjust this value for spacing */
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
 }

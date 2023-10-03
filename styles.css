@@ -14,34 +14,12 @@ header {
     padding: 10px 20px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 50px; /* Adjust the size of the logo as needed */
-    margin-right: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Style the main content area */
+/* Add this style to make the main content take up the full screen */
 main {
-    padding: 20px;
+    height: calc(100vh - 60px); /* Subtract the header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gif-text {
@@ -53,4 +31,7 @@ main {
     height: auto;
 }
 
-/* Add more styles as needed */
+/* Center the text vertically */
+.gif-text p {
+    margin-top: 20px; /* Adjust this value for spacing */
+}

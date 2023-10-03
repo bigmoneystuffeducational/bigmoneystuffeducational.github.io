@@ -1,21 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	
 <head>
-   <meta charset="UTF-8">
-	
-	<title>about:blank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about:blank</title>
+    <link rel="stylesheet" href="game.css"> <!-- You can create a separate CSS file for game-specific styles if needed -->
 </head>
-<body>	
- <header>
-	 <h1 id="header-title">.</h1>
- </header>
- <main>
-    
-    <embed src="run.swf" width="523.7" height="448.55"> </embed>
+<body>
+    <!-- Include the Flash emulator script -->
+    <script src="ruffleflash/ruffle.js"></script>
 
-   <script src="ruffle-nightly-2023_09_17-web-selfhosted/ruffle.js"></script>
-</main>
+    <!-- Embed the SWF file using Ruffle -->
+    <div class="ruffle">
+        <script type="text/ruffle" data-url="run.swf"></script>
+    </div>
+
+    <a href="games.html" class="home-button">Home</a>
 </body>
 </html>

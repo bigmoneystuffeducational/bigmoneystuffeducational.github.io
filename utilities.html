@@ -3,13 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add Bookmark</title>
+    <title>about:blank</title>
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: #666; /* Grey background color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+        }
+
+        header {
+            background-color: #000; /* Black navbar */
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #header-title {
+            margin: 0; /* Remove default margin */
+            color: white; /* White text color */
+        }
+
+        nav {
+            text-align: center; /* Center-align the navbar button */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* White text color for the button */
+            padding: 5px 10px;
+            background-color: #333; /* Darker grey background color for the button */
+            border-radius: 5px; /* Rounded button corners */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1; /* Allow the content to expand and take available space */
+        }
+
+        .game-card {
+            background-color: #333; /* Dark grey background for game cards */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white; /* White text color for game cards */
+            cursor: pointer; /* Change cursor to pointer for card clickability */
+        }
+
+        /* Style the links inside game cards */
+        .game-card a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Add Bookmark</h1>
-    <p>Drag the following button into your bookmarks bar:</p>
-    <a id="zebutton" href=""><button>drag into your bookmarks bar (v4.1)</button></a>
+    <header>
+        <nav>
+            <a href="games.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="header-title">Utilities</h1>
+
+        <!-- Game Cards -->
+        <div class="game-card">
+            <!-- Game 1 Information -->
+            <a href="bookmark.html">
+                <img src="game1_thumbnail.jpg" alt="Game 1 Thumbnail">
+                <h2>BookMarklet</h2>
+                <p>This is basically the website but portable</p>
+            </a>
+        </div>
+
+        <div class="game-card">
+            <!-- Game 2 Information -->
+            <a href="game2.html">
+                <img src="game2_thumbnail.jpg" alt="Game 2 Thumbnail">
+                <h2>Game 2</h2>
+                <p>Description of Game 2</p>
+            </a>
+        </div>
+    </main>
 </body>
 
 </html>

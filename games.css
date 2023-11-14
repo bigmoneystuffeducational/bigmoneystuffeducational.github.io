@@ -27,7 +27,8 @@ main {
 /* Style the game card */
 .game-card {
     display: inline-block;
-    width: calc(25% - 20px); /* 25% width for four cards per row with some spacing */
+    height: 220px;
+    width: 270px; /* Fixed width for the game cards */
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for the game cards */
     border-radius: 10px;
@@ -36,8 +37,10 @@ main {
 }
 
 .game-card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height to control the size */
+    object-fit: cover; /* Scale the image while maintaining aspect ratio */
 }
 
 /* Center the game title inside the card */
@@ -45,6 +48,20 @@ main {
     text-align: center;
     margin: 10px 0;
     color: #fff; /* Text color for game titles */
+}
+
+/* Ensure that there are four cards per row */
+@media (max-width: 652px) {
+    .game-card {
+        width: calc(50% - 20px); /* 50% width for two cards per row on smaller screens */
+    }
+}
+
+/* Ensure that there are four cards per row */
+@media (max-width: 600px) {
+    .game-card {
+        width: calc(100% - 20px); /* 100% width for one card per row on even smaller screens */
+    }
 }
 
 /* Style the home button */

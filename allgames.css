@@ -1,3 +1,4 @@
+/* Custom CSS for styling */
 body {
     margin: 0;
     padding: 0;
@@ -54,10 +55,10 @@ main {
 
 .game-container {
     position: relative;
-    width: 60vw; /* Adjust the width as needed */
-    height: 60vw; /* Maintain a square shape */
-    max-width: 600px;
-    max-height: 600px;
+    width: 75vw; /* Adjust the width as needed */
+    height: 65vh; /* Adjust the height as needed */
+    max-width: 1000px;
+    max-height: 1000px; /* Adjust the max height as needed */
     border-radius: 15px;
     overflow: hidden;
 }
@@ -75,9 +76,10 @@ embed {
     display: flex;
     flex-direction: column; /* Adjust to display fullscreen button and description vertically */
     align-items: center;
-    width: 60vw; /* Adjust the width as needed */
-    max-width: 600px;
-    margin-top: 10px;
+    width: 70vw; /* Adjust the width as needed */
+    max-width: 980px;
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
     border-radius: 15px;
 }
 

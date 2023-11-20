@@ -1,0 +1,1 @@
+If you are wondering why I have a seperate folder for scripts its because the about blank doesnt work when the scripts are inside the html so i have to do an individual one for every html

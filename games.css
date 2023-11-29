@@ -35,7 +35,7 @@ main {
     height: 220px;
     width: 270px; /* Fixed width for the game cards */
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for the game cards */
+    background-color: rgb(106 24 132); /* Semi-transparent black for the game cards */
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
@@ -102,4 +102,9 @@ body::before {
 
 .home-button:hover {
     background-color: rgba(0, 0, 0, 0.9); /* Darker background color on hover */
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* Increase the size by 5% on hover */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }

@@ -1,0 +1,66 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color to black */
+body {
+    background-color: #808080;
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    position: relative/* Specify your preferred font-family */
+}
+
+/* Style the header and navbar */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for the navbar */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Add this style to make the main content take up the full screen */
+main {
+    padding: 20px;
+    text-align: center;
+     position: relative; /* Add this to establish a stacking context */
+    z-index: 1;
+    margin-top: 60px;
+}
+embed {
+    width: 100vw;
+    height: calc(100vh - 60px); /* Add this line */
+    border: none;
+    margin-top: -30px; /* Add this line */
+}
+
+/* Style the game card */
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0); /* Adjust the color and transparency as needed */
+    z-index: 0; /* Ensure the overlay is behind the game cards */
+}
+
+/* Style the home button */
+.home-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for the button */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background color on hover */
+}
+

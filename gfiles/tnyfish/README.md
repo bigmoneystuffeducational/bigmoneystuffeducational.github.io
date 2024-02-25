@@ -1,2 +1,0 @@
-# Tiny-Fishing
-The Game

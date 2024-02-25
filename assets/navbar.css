@@ -1,0 +1,33 @@
+/* navbar.css */
+nav a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    border: 2px solid #fff; /* White outline color */
+    border-radius: 7px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow on hover */
+}
+
+nav a:hover:before {
+    opacity: 1;
+}
+
+/* Add more styles as needed */

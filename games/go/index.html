@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about:blank</title>
+    <link rel="stylesheet" type="text/css" href="/assets/allgames.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <!-- Adjust the path to your background GIF -->
+        <img alt="Background GIF" src="/assets/background.gif">
+    </div>
+    <header>
+        <nav>
+            <a href="/games">Home</a>
+        </nav>
+    </header>
+
+    <div class="game-container">
+        <!-- Adjust the path to your game -->
+        <embed id="game-iframe" src=""></embed>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var urlParams = new URLSearchParams(window.location.search);
+            var gameUrl = urlParams.get('gameUrl');
+            var gameIframe = document.getElementById('game-iframe');
+
+            if (gameUrl) {
+                gameIframe.src = gameUrl;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,59 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about:blank</title>
-    <link rel="stylesheet" type="text/css" href="/assets/allgames.css">
+    <script src="/assets/ruffleflash/ruffle.js"></script>
+    <script>
+        window.onload = function() { // resize flash game to fit window
+            var game = document.getElementById("game");
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            game.style.width = width + "px";
+            game.style.height = height + "px";
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
 </head>
-
-<body>
-    <div class="background-container">
-        <!-- Adjust the path to your background GIF -->
-        <img alt="Background GIF" src="/assets/background.gif">
-    </div>
-    <header>
-        <nav>
-            <a href="/games">Home</a>
-        </nav>
-    </header>
-    <main>
-        <div class="game-container">
-            <!-- Adjust the path to your game -->
-            <embed src="fullscreen.html">
-        </div>
-        <div class="controls">
-            <button>Fullscreen</button>
-
-            <script>
-                window.addEventListener('DOMContentLoaded', (event) => {
-                    var urlObj = new window.URL(window.location.href);
-                    var url = "https://mathfuncool2.github.io/games/flash/infiltrateairship/fullscreen.html"; 
-            
-                    if (url) {
-                        var win;
-            
-                        document.querySelector('button').onclick = function() {
-                            if (win) {
-                                win.focus();
-                            } else {
-                                win = window.open();
-                                win.document.body.style.margin = '0';
-                                win.document.body.style.height = '100vh';
-                                var iframe = win.document.createElement('iframe');
-                                iframe.style.border = 'none';
-                                iframe.style.width = '100%';
-                                iframe.style.height = '100%';
-                                iframe.style.margin = '0';
-                                iframe.src = url;
-                                win.document.body.appendChild(iframe);
-                            }
-                            document.querySelector('button').style.background = 'grey'; // Fix typo in 'background'
-                            document.querySelector('button').innerHTML = "Already Open";
-                        };
-                    }
-                });
-            </script>
-
-        </div>
-    </main>
+<embed>
+    <embed src="InfiltratingAirship.swf" type="application/x-shockwave-flash" id="game">
 </body>
 </html>

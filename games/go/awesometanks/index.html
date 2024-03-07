@@ -1,59 +1,31 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about:blank</title>
-    <link rel="stylesheet" type="text/css" href="/assets/allgames.css">
-</head>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Awesome Tanks</title>
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/fonts.css" rel="stylesheet">
+        <meta name="apple-mobile-web-app-title" content="Awesome Tanks">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    </head>
+    <body>
+        <p style="font-family: 'Gunplay'; position: absolute; pointer-events: none; opacity: 0">Font loader</p>
+        <script>
+            var AT = {
+                // URL where an user will be redirected after clicking "Play" button on the Site lock screen
+                'SITE_LOCK_TARGET': '//www.coolmathgames.com/'
+            };
 
-<body>
-    <div class="background-container">
-        <!-- Adjust the path to your background GIF -->
-        <img alt="Background GIF" src="/assets/background.gif">
-    </div>
-    <header>
-        <nav>
-            <a href="/games">Home</a>
-        </nav>
-    </header>
-    <main>
-        <div class="game-container">
-            <!-- Adjust the path to your game -->
-            <embed src="game/index.html">
-        </div>
-        <div class="controls">
-            <button>Fullscreen</button>
-
-            <script>
-                window.addEventListener('DOMContentLoaded', (event) => {
-                    var urlObj = new window.URL(window.location.href);
-                    var url = "https://mathfuncool2.github.io/games/awesometanks/game/index.html"; 
-            
-                    if (url) {
-                        var win;
-            
-                        document.querySelector('button').onclick = function() {
-                            if (win) {
-                                win.focus();
-                            } else {
-                                win = window.open();
-                                win.document.body.style.margin = '0';
-                                win.document.body.style.height = '100vh';
-                                var iframe = win.document.createElement('iframe');
-                                iframe.style.border = 'none';
-                                iframe.style.width = '100%';
-                                iframe.style.height = '100%';
-                                iframe.style.margin = '0';
-                                iframe.src = url;
-                                win.document.body.appendChild(iframe);
-                            }
-                            document.querySelector('button').style.background = 'grey'; // Fix typo in 'background'
-                            document.querySelector('button').innerHTML = "Already Open";
-                        };
-                    }
-                });
-            </script>
-
-        </div>
-    </main>
-</body>
+            var WebFontConfig = {
+                'classes': false,
+                'timeout': 0,
+                'active': function() {},
+                'custom': {'families': ['Gunplay'], 'urls': ['styles/fonts.css']}
+            };
+        </script>
+        <script src="awesome_tanks_2.js"></script>
+    </body>
 </html>

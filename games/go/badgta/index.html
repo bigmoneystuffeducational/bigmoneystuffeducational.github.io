@@ -1,59 +1,24 @@
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <title>about:blank</title>
-    <link rel="stylesheet" type="text/css" href="/assets/allgames.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Real Gangster Simulator Grand City</title>
+    <link rel="shortcut icon" href="55favicon.ico">
+    <link rel="stylesheet" href="zombies11.css">
+    <script src="55UnityProgress.js"></script>
+    <script src="vvvUnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "policeBike_Car.json", {onProgress: UnityProgress});
+    </script>
 </head>
-
 <body>
-    <div class="background-container">
-        <!-- Adjust the path to your background GIF -->
-        <img alt="Background GIF" src="/assets/background.gif">
-    </div>
-    <header>
-        <nav>
-            <a href="/games">Home</a>
-        </nav>
-    </header>
-    <main>
-        <div class="game-container">
-            <!-- Adjust the path to your game -->
-            <embed src="game/index.html">
-        </div>
-        <div class="controls">
-            <button>Fullscreen</button>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 640px"></div>
+</div>
 
-            <script>
-                window.addEventListener('DOMContentLoaded', (event) => {
-                    var urlObj = new window.URL(window.location.href);
-                    var url = "https://mathfuncool2.github.io/games/badgta/game/index.html"; 
-            
-                    if (url) {
-                        var win;
-            
-                        document.querySelector('button').onclick = function() {
-                            if (win) {
-                                win.focus();
-                            } else {
-                                win = window.open();
-                                win.document.body.style.margin = '0';
-                                win.document.body.style.height = '100vh';
-                                var iframe = win.document.createElement('iframe');
-                                iframe.style.border = 'none';
-                                iframe.style.width = '100%';
-                                iframe.style.height = '100%';
-                                iframe.style.margin = '0';
-                                iframe.src = url;
-                                win.document.body.appendChild(iframe);
-                            }
-                            document.querySelector('button').style.background = 'grey'; // Fix typo in 'background'
-                            document.querySelector('button').innerHTML = "Already Open";
-                        };
-                    }
-                });
-            </script>
-
-        </div>
-    </main>
 </body>
 </html>
+
+<div class="floating" id="moreg" style="position:fixed; top: 30%; left: 0px; z-index: 10"><a target="_blank" href="https://sites.google.com/view/unblockedgame" title="More of best games">

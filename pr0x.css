@@ -29,7 +29,7 @@ main {
     z-index: 1;
     margin-top: 60px;
 }
-embed {
+iframe {
     width: 100vw;
     height: calc(100vh - 60px); /* Add this line */
     border: none;

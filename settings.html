@@ -124,19 +124,20 @@
     <main>
         <h1 class="games-title">Settings</h1>
 
-        <!-- Example setting card with toggle switch -->
+        <!-- Dropdown Setting -->
         <div class="setting-card">
-            <h2>Toggle Setting 1</h2>
-            <label class="toggle-switch">
-                <input type="checkbox">
-                <span class="toggle-slider"></span>
-            </label>
+            <h2>Select Background GIF</h2>
+            <select id="backgroundSelect" onchange="changeBackgroundGIF()">
+                <option value="/assets/background.gif">Default</option>
+                <option value="/assets/background1.gif">Background 1</option>
+                <option value="/assets/background2.gif">Background 2</option>
+                <option value="/assets/background3.gif">Background 3</option>
+                <!-- Add more background options as needed -->
+            </select>
         </div>
-
-        <!-- Repeat this block for each setting -->
-
     </main>
+    
+    <!-- Include settings.js -->
+    <script src="settings.js"></script>
 </body>
-
 </html>
-

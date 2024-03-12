@@ -2,6 +2,9 @@
 body, h1, h2, ul, li {
     margin: 0;
     padding: 0;
+}
+
+main {
     background: url('/assets/background.gif') no-repeat center center fixed;
     background-size: cover;
 }

@@ -27,13 +27,14 @@ main {
     text-align: center;
      position: relative; /* Add this to establish a stacking context */
     z-index: 1;
-    margin-top: 60px;
+     background-color: rgba(0, 0, 0, 0.7);
 }
 iframe {
-    width: 100vw;
+    width: 95vw;
     height: calc(100vh - 60px); /* Add this line */
     border: none;
-    margin-top: -30px; /* Add this line */
+    
+    
 }
 
 /* Style the game card */

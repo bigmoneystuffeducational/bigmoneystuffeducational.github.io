@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="/assets/navbar.css">
     <style>
         /* Add custom CSS for header layout */
-       header {
-    background-color: rgba(0, 0, 0,);
-    color: #fff;
-    padding: 10px 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-}
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000; /* Adjust background color as needed */
+            padding: 10px 20px;
+        }
 
         #header-title {
             margin: 0; /* Remove default margin */
@@ -36,26 +34,88 @@
             text-decoration: none;
             color: white; /* Adjust text color as needed */
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .setting-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px; /* Adjust the width as needed */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .setting-card h2 {
+            margin: 0;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        input:checked + .toggle-slider {
+            background-color: #4CAF50;
+        }
+
+        input:checked + .toggle-slider:before {
+            transform: translateX(20px);
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo-title">
-                
-                <h1 id="header-title">Mathfuncool2: The return</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/index">Home</a></li>
-                    <li><a href="/games">Games</a></li>
-                    <li><a href="/apps">Apps</a></li>
-                    <li><a href="/pr0xy">Pr0xy(NEW)</a></li>
-                    <li><a href="/suggest">Suggest</a></li>
-                    <li><a href="/settings">Settings</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 id="header-title">Mathfuncool2: The return</h1>
+        <!-- Navigation bar from index.html -->
+        <nav>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/games">Games</a></li>
+                <li><a href="/apps">Apps</a></li>
+                <li><a href="/pr0xy">Pr0xy(NEW)</a></li>
+                <li><a href="/suggest">Suggest</a></li>
+                <li><a href="/settings">Settings</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
     </main>

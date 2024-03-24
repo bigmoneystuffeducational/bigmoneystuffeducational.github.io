@@ -1,5 +1,7 @@
 /* Custom CSS for styling */
 body {
+    background: url('/assets/background.gif') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,9 +9,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    background: url('/assets/background.gif') no-repeat center center fixed;
-    background-size: cover;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .background-container {
